@@ -1,0 +1,678 @@
+@font-face {
+  font-family: 'TitanOne';
+  src: local('TitanOne'), url(./Fonts/TitanOne-Regular.ttf) format('truetype');
+}
+.Turtorial{
+display: flex;
+max-width: 375px;
+max-height: 812px;
+width: 375px;
+height: 750px;
+overflow: hidden;
+position: relative;
+}
+p{
+line-height: 1.6em;
+}
+.Info_text{
+margin-top: 14vh;
+}
+.Party_text{
+  font-size: 3.2vh;
+margin-top: 6vh;
+
+}
+.Start_text{
+  margin-top: 4vh;
+text-align: center;
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  font-style: normal; 
+  font-variant: normal; 
+  letter-spacing: 0.5vw;
+  font-size: 3.2vh;
+
+}
+.Welcome{
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  font-style: normal; 
+  font-variant: normal; 
+  letter-spacing: 0.5vw;
+  font-size: 2vh;
+  margin-top: 5vh;
+}
+.info{
+    text-align: center;
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  font-style: normal; 
+  font-variant: normal;
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.button-next{
+  background: url("chevron-left-solid.svg");
+  border: none;
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: 3vh;
+  min-height: 10vh;
+  min-width: 5vh;
+  margin: 0;
+  text-align: center;
+  background-position: center;
+  background-color: #DAF0EE;
+}
+.button-none{
+  border: none;
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: 3vh;
+  min-height: 10vh;
+  min-width: 5vh;
+  margin: 0;
+  text-align: center;
+  background-position: center;
+  background-color: #DAF0EE;
+}
+.button-back{
+    background: url("chevron-left-solid.svg");
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 3vh;
+  min-height: 10vh;
+  min-width: 5vh;
+  margin: 0;
+  text-align: center;
+  background-position: center;
+  background-color: #DAF0EE;
+
+}
+.Footer{
+display: flex;
+justify-content: space-between;
+flex: 1 0 auto;
+position: relative;
+
+
+}
+.Dots{
+align-items: center;
+flex: 1 0 auto;
+display: flex;
+justify-content: center;
+
+}
+.Dot{
+background: black;
+opacity: .5;
+margin: 5px;
+width: 8px;
+height: 8px;
+border-radius: 8px;
+transition: opacity .125s ease-in-out;
+}
+.Selected_Dot{
+background: white;
+margin: 5px;
+width: 14px;
+height: 14px;
+border-radius: 8px;
+animation: appear .4s ease-in
+}
+@keyframes appear{
+0%,50%{
+background: black;
+opacity: .5;
+margin: 5px;
+width: 8px;
+height: 8px;
+border-radius: 8px;
+
+
+}
+50%,100%{
+background: white;
+margin: 5px;
+width: 14px;
+height: 14px;
+border-radius: 8px;
+}
+
+
+
+}
+.container {
+  
+  width: auto;
+  min-height: 812px;
+  background-color: rgb(222,239,238);
+  overflow: hidden;
+ 
+
+}
+.info-Logo{
+  margin-top: 5vh;
+  padding-top: 2vh;
+  min-height:8vh;
+  background-image: url("Oddson-01.svg");
+   font-family: "TitanOne";
+  background-size:8vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #DAF0EE;
+}
+.Start-Logo{
+margin-top: 15vh;
+  padding-top: 2vh;
+  min-height: 20vh;
+  background-image: url("Oddson-01.svg");
+   font-family: "TitanOne";
+  background-size: 20vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #DAF0EE;
+}
+.top-bar {
+  padding-top: 2vh;
+  min-height: 8vh;
+  background-image: url("Oddson-01.svg");
+   font-family: "TitanOne";
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #DAF0EE;
+}
+
+.header {
+
+}
+
+.logo {
+  padding-top: 15vh;
+  background-image: url("Oddson-02.svg"); /*Aa den är skitdålig kvalite jag vet :) */
+    font-family: "TitanOne";
+  background-size: 80vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  min-height: 20vh;
+
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.Start_app_button{
+  width: 30vh;
+  border: none;
+  background:none;
+  box-shadow: 0px 5px 5px rgba(0 , 0, 0, 0.45);
+  background-color: rgb(161,180,178);
+  text-align: center;
+  padding: 7vw;
+  font-size:30px;
+  margin: 4px 2px;
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  font-style: normal; 
+  font-variant: normal; 
+  letter-spacing: 0.5vw;
+  margin: 2vh;
+  margin-top: 20vh;
+  border-radius: 4px;
+
+
+}
+.buttons{
+  width: 30vh;
+  border: none;
+  background:none;
+  box-shadow: 0px 5px 5px rgba(0 , 0, 0, 0.45);
+  background-color: rgb(161,180,178);
+  text-align: center;
+  padding: 7vw;
+  font-size:30px;
+  margin: 4px 2px;
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  font-style: normal; 
+  font-variant: normal; 
+  letter-spacing: 0.5vw;
+  margin: 2vh;
+  border-radius: 4px;
+}
+
+.transparancy {
+  background-color: rgba(0,0,0, 0.2);
+  min-height: 100vh;
+  position: absolute;
+  width: auto;  
+  position:absolute;
+  z-index:10;
+  top:0;
+  overflow: hidden;
+
+}
+
+.infobox {
+  font-family: "Josefin Sans";
+  text-align: center;
+  color: black;
+  padding: 25px;
+  margin: 15px;
+  padding-top: 0px;
+  background-color: white;
+  height: 90vh;
+  width: auto;
+  border-radius: 6px;
+  overflow: scroll;
+
+}
+
+.button-info {
+  
+  background-image: url("question-circle-regular.svg");
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  height: 5vh;
+  width: 40vh;
+  position: absolute;
+  bottom: 2vh;
+  left: 4vh;
+
+}
+.pressthis{
+  width: 50vh;
+  margin-left: 6vh;
+    font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+.tooltip{
+margin-left: 1vh;
+width: 200px;
+
+}
+.tooltip .tooltiptext {
+  padding: 0.5vh;
+  margin-bottom: 2vh;
+  margin-left: 8vh;
+width: 200px;
+  background-color: black;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+ 
+
+
+  
+  /* Position the tooltip */
+  position: absolute;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.button-infoClose {
+  background-image: url("times-circle-regular.svg");
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  height: 5vh;
+  width: 5vh;
+  position: absolute;
+  top: 3vh;
+  right: 3vh;
+}
+.App {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+header{
+height: 15vw;
+display: flex;
+
+}
+.text_field{
+width: 50vh;
+align-items: center;
+}
+.scroll_div{
+height: 30vh;
+overflow: scroll;
+
+
+}
+.list{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ margin-left: 15vh;
+  text-align: center;
+  max-width: 37vw;
+}
+.remove_field{
+  padding-left: 3vw;
+  border: none;
+  background-color: #DAF0EE;
+  font-style: bold;
+  font-size: 10vw;
+
+
+}
+.start_buttons{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  height: 10vw;
+  width: 30vw;
+  font-size: 5vw;
+  background-color: #9DB5B2;
+  font-variant: normal;
+  margin-top: 10vw;
+}
+.back_button{
+  background-image: url("chevron-left-solid.svg");
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 4vh;
+  min-height: 10vh;
+  min-width: 5vh;
+  margin: 0;
+  text-align: center;
+  background-position: center;
+  background-color: #DAF0EE;
+}
+
+.name_div{
+overflow-y: scroll;
+height: 64vw;
+width: 100vw;
+text-align: center; 
+align-items: center;
+}
+.Add_field{
+  border: none;
+  background-color: #DAF0EE;
+  font-style: bold;
+  font-size: 15vw;
+}
+.Namefield{
+text-align: center;
+margin-top: 5vw;
+border-radius: 1vw;
+border: none;
+height: 12vw;
+width: 25vh;
+background-color: rgba(255,255,255,0.7);
+background-blend-mode: overlay;
+font-family: 'Josefin Sans', sans-serif;font-style: normal;
+font-variant: normal;
+font-size: 3vh;
+}
+.Background{
+  position: relative;
+  background-color: #DAF0EE;
+  align-items: center;
+  height: 900vw;
+  width: 100vw;
+  margin-top: 0 auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+.h1{
+  text-align: center;
+}
+.name{
+  margin-top: 0;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.odds{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin-top: 10vw;
+}
+.question{
+  padding: 3vw;
+  border-radius: 2vw;
+  align-content: center;
+  margin-right: 10vw;
+  text-align: center;
+  font-size: 7vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  margin-left: 10vw;
+  background: #FFFFFF;
+  opacity: 0.5;
+}
+a{
+  text-align: center;
+  align-items: center;
+
+
+}
+.Bigger_buttons{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  width: 28vw;
+  height: 16vw;
+  margin-top: 2vw;
+  background: #9DB5B2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 0vw;
+  font-size: 9vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+.odds_button{
+  width: 18vh;
+  border: none;
+  background:none;
+  box-shadow: 0px 5px 5px rgba(0 , 0, 0, 0.45);
+  background-color: rgb(161,180,178);
+  text-align: center;
+  padding: 5vw;
+  font-size:20px;
+  margin: 4px 2px;
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  font-style: normal; 
+  font-variant: normal; 
+  letter-spacing: 0.5vw;
+  margin: 2vh;
+  border-radius: 4px;
+}
+.next_question{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 18vw;
+  height: 6vw;
+  margin-top: 2vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+.choose_number{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+.choose_number_odds{
+  text-align: center;
+  margin-top: 7vw;
+}
+.go_button{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  width: 45vw;
+  height: 25vw;
+  margin-top: 60vw;
+  background: #9DB5B2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 9vw;
+  border-radius: 0.1vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+.right_odds_number{
+  font-size: 20vw;
+}
+.switch_next_button{
+  display: flex;
+  margin-top: 0vw;
+}
+#next_button{
+  width: 35vw;
+  margin-top: 5vw;
+  background: #9DB5B2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 7vw;
+  border: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+#switch_button{
+  margin-top: 10vw;
+  width: 35vw;
+  background: #9DB5B2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 7vw;
+  border: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+#no_switch{
+  font-size: 6vw;
+}
+.counter {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 5vh;
+}
+.counter.hide {
+  transform: translate(-50%, -50%) scale(0);
+  animation: hide .2s ease-out;
+}
+@keyframes hide {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+@keyframes show {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    80% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+body {
+    background-color: #DAF0EE;
+}
+.nums {
+  color: #000000;
+  position: relative;
+  font-size: 140px;
+  overflow: hidden;
+  width: 250px;
+  height: 140px;
+}
+.nums span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(120deg);
+  transform-origin: bottom center;
+}
+.nums span.in {
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: goIn 3.1s ease-in-out;
+}
+.tooltip span.tooltiptext {
+  margin-left: 6vh;
+  animation: tooltips 2s ease-in-out;
+}
+@keyframes goIn {
+
+  0%,10% {
+    opacity: 0%;
+  }
+
+  10%,30% {
+    opacity: 100%;
+  }
+  30%,45% {
+    opacity: 0%;
+  }
+  45%,65% {
+    opacity: 100%;
+  }
+  65%,75% {
+    opacity: 0%;
+  }
+  75%,100% {
+    opacity: 100%;
+  }
+}
+@keyframes tooltips {
+
+  0%,50% {
+    width: 330px;
+    opacity: 0%;
+  }
+  50%,100% {
+    width: 200px;
+    opacity: 100%;
+  }
+}
+.App-link {
+  color: #09d3ac;
+}
